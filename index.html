@@ -147,6 +147,8 @@ h2{font-family:"Space Grotesk";font-size:clamp(32px,4.5vw,50px);letter-spacing:-
 .gh{flex:none;width:38px;height:38px;border-radius:10px;border:1px solid var(--line);display:grid;place-items:center;color:var(--muted);transition:.2s}
 .gh:hover{color:var(--accent);border-color:var(--accent)}
 .gh svg{width:17px;height:17px}
+.live{align-self:flex-start;display:inline-flex;align-items:center;gap:8px;margin-top:12px;font-family:"JetBrains Mono";font-size:13px;font-weight:600;color:var(--accent);text-decoration:none;border:1px solid var(--line2);border-radius:9px;padding:8px 14px;transition:.2s}
+.live:hover{border-color:var(--accent)}
 
 /* achievements */
 .ach{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
@@ -352,13 +354,14 @@ footer{padding:44px 0;color:var(--dim);font-size:13px;display:flex;justify-conte
       </article>
 
       <article class="proj rv" data-c="ai">
-        <div class="proj-head"><div><div class="cat">AI · Full-stack</div><h3>AI Resume Screening System</h3></div><a class="gh" href="https://github.com/Yoyu-2005" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a></div>
+        <div class="proj-head"><div><div class="cat">AI · Full-stack</div><h3>AI Resume Screening System</h3></div><a class="gh" href="https://ai-resume-screener-gamma-lime.vercel.app" target="_blank" rel="noopener" aria-label="Open the live app"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a></div>
         <p class="one">Recruiters upload a stack of résumés and a JD — get a ranked leaderboard with reasons.</p>
         <ul>
           <li>React + FastAPI app accepting bulk PDF/DOCX uploads against a job description.</li>
-          <li>RAG pipeline: Pinecone semantic search retrieves the top 10, GPT-4o returns scores, summaries and skill gaps as Pydantic-validated JSON.</li>
+          <li>RAG pipeline: Pinecone semantic search retrieves the top 10, an LLM via OpenRouter returns scores, summaries and skill gaps as Pydantic-validated JSON.</li>
         </ul>
-        <div class="tags"><span class="tag">React</span><span class="tag">FastAPI</span><span class="tag">LangChain</span><span class="tag">Pinecone</span><span class="tag">GPT-4o</span><span class="tag">Tailwind</span></div>
+        <a class="live" href="https://ai-resume-screener-gamma-lime.vercel.app" target="_blank" rel="noopener">Live demo ↗</a>
+        <div class="tags"><span class="tag">React</span><span class="tag">FastAPI</span><span class="tag">LangChain</span><span class="tag">Pinecone</span><span class="tag">OpenRouter</span><span class="tag">Tailwind</span></div>
       </article>
 
       <article class="proj rv" data-c="research">
